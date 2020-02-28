@@ -1,0 +1,34 @@
+.nav-wrapper .nav-container {
+  margin: 0 auto;
+  background-color: orange;
+  width: 910px;
+}
+
+.nav-wrapper .nav-container nav .logo-wrapper {
+  font-size: 32px;
+}
+
+.nav-wrapper .nav-container nav .burger {
+  display: inline-block;
+}
+
+.nav-wrapper .nav-container nav .burger .icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background: black;
+  border-radius: 1px;
+}
+
+.nav-wrapper .nav-container nav .burger .icon-bar:nth-child(1n+1) {
+  margin-top: 4px;
+}
+
+.nav-wrapper .nav-container nav ul {
+  display: none;
+}
+
+.nav-wrapper .nav-container nav .showUl {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

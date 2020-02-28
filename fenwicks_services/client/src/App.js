@@ -9,10 +9,26 @@ import Nav from "./components/Nav/nav"
 import Footer from "./components/Footer/footer"
 
 class App extends Component {
+  state = {
+    navCollapsed: false
+  }
+
+  toggleBurger = event => {
+    event.preventDefault();
+    const navCollapsed = !this.state.navCollapsed
+    this.setState({navCollapsed})
+  }
+
   render() {
+    
+    const showUl = this.state.navCollapsed ? "showUl" : ""
+
     return (
       <Router>
-        <Nav/>
+        <Nav
+        toggleBurger = {this.toggleBurger}
+        showUl = {showUl}
+        />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about-us" component={About} />
