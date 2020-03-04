@@ -1,34 +1,128 @@
-.nav-wrapper .nav-container {
+.nav-container {
   margin: 0 auto;
-  background-color: orange;
-  width: 910px;
 }
 
-.nav-wrapper .nav-container nav .logo-wrapper {
-  font-size: 32px;
+.nav-container nav {
+  padding: 5px 13px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.nav-wrapper .nav-container nav .burger {
-  display: inline-block;
+.nav-container nav .logo-wrapper {
+  line-height: 0;
 }
 
-.nav-wrapper .nav-container nav .burger .icon-bar {
+.nav-container nav .logo-wrapper .logo {
   display: block;
-  width: 25px;
-  height: 4px;
-  background: black;
+}
+
+.nav-container nav .logo-wrapper .logo img {
+  height: 80px;
+}
+
+.nav-container nav .menu-button {
+  background-color: #00803e;
+  border-radius: 0px;
+  font-weight: 700;
+  padding: 10px 15px;
+  color: white;
+}
+
+.nav-container nav .menu-button .burger {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  margin-left: 10px;
+}
+
+.nav-container nav .menu-button .burger .icon-bar {
+  display: block;
+  width: 18px;
+  height: 3px;
+  background: white;
   border-radius: 1px;
 }
 
-.nav-wrapper .nav-container nav .burger .icon-bar:nth-child(1n+1) {
-  margin-top: 4px;
+.nav-container nav .menu-button .burger .icon-bar:nth-child(1n + 2) {
+  margin-top: 3px;
 }
 
-.nav-wrapper .nav-container nav ul {
+.nav-container nav ul {
   display: none;
 }
 
-.nav-wrapper .nav-container nav .showUl {
-  display: inline-block;
+.nav-container nav .showUl {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 769px) {
+  .nav-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 989px) {
+  .nav-wrapper {
+    padding-top: 20px;
+    height: 65px;
+    position: relative;
+    width: 100%;
+    background-color: #333;
+  }
+  .nav-wrapper .nav-container {
+    background-color: white;
+    width: 910px;
+  }
+  .nav-wrapper .nav-container nav ul {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 10px;
+    background-color: #00803e;
+  }
+  .nav-wrapper .nav-container nav ul li {
+    border: none;
+    padding: 37px 30px;
+  }
+  .nav-wrapper .nav-container nav ul li a {
+    color: white;
+  }
+  .nav-wrapper .nav-container nav .menu-button {
+    display: none;
+  }
+}
+
+footer {
+  background: #222;
+}
+
+main {
+  background-color: blue;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

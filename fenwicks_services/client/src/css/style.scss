@@ -1,2 +1,12 @@
+$primary-color: #00803e;
+
 @import "./components/nav";
 @import "./components/footer";
+
+main {
+    background-color: blue;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}

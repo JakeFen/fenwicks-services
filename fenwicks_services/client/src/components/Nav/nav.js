@@ -1,32 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../images/fenwicks_services_logo2.png";
 
 function Nav(props) {
   return (
     <div className="nav-wrapper">
       <div className="nav-container">
-        <nav>
+        <nav className="navbar">
           <div className="logo-wrapper">
-            <h1>
-              <Link to="/">Fenwicks Services</Link>
-            </h1>
+            <Link to="/" className="logo">
+              <img src={Logo} />
+            </Link>
           </div>
-          <div>
-            <button type="button" className="btn" onClick={props.toggleBurger}>
-              MENU
-                <span className="burger">
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                </span>
-            </button>
-          </div>
+          <button
+            type="button"
+            className="btn menu-button"
+            onClick={props.toggleBurger}
+          >
+            MENU
+            <span className="burger">
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </span>
+          </button>
           <ul className={props.showUl}>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="about-us">About Us</Link>
+              <Link to="about-us" className="text-decoration-none">About Us</Link>
             </li>
             <li>
               <Link to="/services">Services</Link>

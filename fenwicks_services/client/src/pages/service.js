@@ -2,9 +2,9 @@ import React from "react";
 
 function Service() {
   return (
-    <div>
+    <main>
       <h1>Service Page</h1>
-    </div>
+    </main>
   );
 }
 
