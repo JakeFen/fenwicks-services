@@ -54,8 +54,8 @@
 
 .nav-container nav .showUl {
   position: relative;
+  background: #00803e;
   width: 100%;
-  text-align: center;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,8 +64,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
+}
+
+.nav-container nav .showUl li:nth-child(1n + 2) {
+  border-top: solid rgba(250, 250, 250, 0.2) 1px;
+}
+
+.nav-container nav .showUl li a {
+  display: block;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 25px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -86,6 +98,9 @@
     background-color: white;
     width: 910px;
   }
+  .nav-wrapper .nav-container nav {
+    padding: 2px 5px;
+  }
   .nav-wrapper .nav-container nav ul {
     position: absolute;
     right: 0;
@@ -99,18 +114,58 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 10px;
+    padding: 0 10px 0 50px;
     background-color: #00803e;
+  }
+  .nav-wrapper .nav-container nav ul:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+    border-width: 0 0 84px 40px;
   }
   .nav-wrapper .nav-container nav ul li {
     border: none;
-    padding: 37px 30px;
+    position: relative;
   }
   .nav-wrapper .nav-container nav ul li a {
     color: white;
+    padding: 32px 30px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .nav-wrapper .nav-container nav ul li a:before {
+    position: absolute;
+    content: "";
+    left: -4px;
+    top: calc(50% - 1px);
+    width: 4px;
+    height: 4px;
+    background-color: #00994a;
+    border-radius: 50%;
+  }
+  .nav-wrapper .nav-container nav ul li a:hover:after {
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #00b356;
   }
   .nav-wrapper .nav-container nav .menu-button {
     display: none;
+  }
+  .active-nav-page:after {
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #00b356;
   }
 }
 

@@ -10,13 +10,19 @@ import Footer from "./components/Footer/footer"
 
 class App extends Component {
   state = {
-    navCollapsed: false
+    navCollapsed: false,
+    activeNavPage: "home"
   }
 
   toggleBurger = event => {
     event.preventDefault();
     const navCollapsed = !this.state.navCollapsed
     this.setState({navCollapsed})
+  }
+
+  navRouting = event => {
+    const navVal = event.currentTarget.getAttribute('value')
+    this.setState({activeNavPage: navVal})
   }
 
   render() {
@@ -28,6 +34,8 @@ class App extends Component {
         <Nav
         toggleBurger = {this.toggleBurger}
         showUl = {showUl}
+        activeNavPage = {this.state.activeNavPage}
+        navRouting = {this.navRouting}
         />
         <Switch>
           <Route exact path="/" component={Home} />
