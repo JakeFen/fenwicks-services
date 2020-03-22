@@ -3,9 +3,10 @@ $secondary-color: #00b356;
 
 @import "./components/nav";
 @import "./components/footer";
+@import "./components/jumbotron";
 
-main {
-    background-color: blue;
+body {
+    background: white;
 }
 
 html {
