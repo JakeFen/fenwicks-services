@@ -8,7 +8,12 @@ function Nav(props) {
       <div className="nav-container">
         <nav className="navbar">
           <div className="logo-wrapper">
-            <Link to="/" className="logo">
+            <Link
+              to="/"
+              className="logo"
+              value="home"
+              onClick={props.navRouting}
+            >
               <img src={Logo} alt="Company logo" />
             </Link>
           </div>
