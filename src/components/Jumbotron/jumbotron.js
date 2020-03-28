@@ -9,7 +9,7 @@ function Jumbotron() {
   const params = {
     loop: true,
     autoplay: {
-    delay: 6000
+      delay: 6000
     },
     pagination: {
       el: ".swiper-pagination",
@@ -27,30 +27,48 @@ function Jumbotron() {
       <div className="swiper-slide slideImage1">
         <img src={slideImage1} className="jumbotron-image" alt="img3"></img>
         <div className="slide-content">
-          <h2>GET LAWN CARE IN CHARLOTTE, NC TODAY</h2>
-          <div className="slide-buttons">
-            <button>About Us</button>
-            <button>Services</button>
+          <div className="slide-text">
+            <h2>
+              Keep your lawn and landscape
+              <br />
+              looking it's best
+            </h2>
+            <div className="slide-buttons">
+              <button>ABOUT US</button>
+              <button>GET IN TOUCH</button>
+            </div>
           </div>
         </div>
       </div>
       <div className="swiper-slide slideImage2">
         <img src={slideImage2} className="jumbotron-image" alt="img3"></img>
         <div className="slide-content">
-          <h2>GET LAWN CARE IN CHARLOTTE, NC TODAY</h2>
-          <div className="slide-buttons">
-            <button>About Us</button>
-            <button>Services</button>
+          <div className="slide-text">
+            <h2>
+              Keep your lawn and landscape
+              <br />
+              looking it's best
+            </h2>
+            <div className="slide-buttons">
+              <button>GALLERY</button>
+              <button>GET IN TOUCH</button>
+            </div>
           </div>
         </div>
       </div>
       <div className="swiper-slide slideImage3">
         <img src={slideImage3} className="jumbotron-image" alt="img3"></img>
         <div className="slide-content">
-          <h2>GET LAWN CARE IN CHARLOTTE, NC TODAY</h2>
-          <div className="slide-buttons">
-            <button>About Us</button>
-            <button>Services</button>
+          <div className="slide-text">
+            <h2>
+              Keep your lawn and landscape
+              <br />
+              looking it's best
+            </h2>
+            <div className="slide-buttons">
+              <button>SERVICES</button>
+              <button>GET IN TOUCH</button>
+            </div>
           </div>
         </div>
       </div>
