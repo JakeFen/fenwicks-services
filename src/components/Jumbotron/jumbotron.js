@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import slideImage1 from "../../images/slide-image1.jpeg";
 import slideImage2 from "../../images/slide-image2.jpeg";
 import slideImage3 from "../../images/slide-image3.jpeg";
@@ -30,12 +31,15 @@ function Jumbotron() {
           <div className="slide-text">
             <h2>
               Keep your lawn and landscape
-              <br />
               looking it's best
             </h2>
-            <div className="slide-buttons">
-              <button>ABOUT US</button>
-              <button>GET IN TOUCH</button>
+            <div className="slide-button-container">
+              <Link className="slide-button" to="/">
+                ABOUT US
+              </Link>
+              <Link className="slide-button" to="/">
+                GET IN TOUCH
+              </Link>
             </div>
           </div>
         </div>
@@ -46,12 +50,15 @@ function Jumbotron() {
           <div className="slide-text">
             <h2>
               Keep your lawn and landscape
-              <br />
               looking it's best
             </h2>
-            <div className="slide-buttons">
-              <button>GALLERY</button>
-              <button>GET IN TOUCH</button>
+            <div className="slide-button-container">
+              <Link className="slide-button" to="/">
+                GALLERY
+              </Link>
+              <Link className="slide-button" to="/">
+                GET IN TOUCH
+              </Link>
             </div>
           </div>
         </div>
@@ -62,12 +69,15 @@ function Jumbotron() {
           <div className="slide-text">
             <h2>
               Keep your lawn and landscape
-              <br />
               looking it's best
             </h2>
-            <div className="slide-buttons">
-              <button>SERVICES</button>
-              <button>GET IN TOUCH</button>
+            <div className="slide-button-container">
+              <Link className="slide-button" to="/">
+                SERVICES
+              </Link>
+              <Link className="slide-button" to="/">
+                GET IN TOUCH
+              </Link>
             </div>
           </div>
         </div>
