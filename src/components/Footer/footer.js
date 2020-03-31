@@ -3,24 +3,37 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <ul>
+      <ul className="footer-social-icons">
         <li>
-          <a href="/">Facebook</a>
+          <a href="/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
         </li>
         <li>
-          <a href="/">Twitter</a>
+          <a href="/">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="/">LinkedIn</a>
+          <a href="/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </li>
         <li>
-          <a href="/">Instagram</a>
+          <a href="/">
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
       </ul>
-      <ul>
-          <li>2020 Fenwicks Services</li>
-          <li>Developer: <a href="https://jakefen.github.io/Portfolio/">Jacob Fenwick</a></li>
-          <li>For Questions Call: <a href="tel:567-283-0074">567-283-0074</a></li>
+      <ul className="footer-copyright">
+        <li>© 2020 Fenwick's Services LLC</li>
+        <li>
+          Web developer:{" "}
+          <a href="https://jakefen.github.io/Portfolio/">Jacob Fenwick</a>
+        </li>
+        <li>
+          For Questions Call: <a href="tel:4195030994">(419) 503-0994</a>
+        </li>
       </ul>
     </footer>
   );

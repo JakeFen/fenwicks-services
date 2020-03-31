@@ -1,0 +1,11 @@
+.banner-image-wrapper {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,11 +1,12 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/jumbotron";
+import HomeBanner from "../components/HomeBanner/homebanner"
 
 function Home() {
   return (
     <main>
       <Jumbotron />
-      <h1>Home Page</h1>
+      <HomeBanner/>
     </main>
   );
 }

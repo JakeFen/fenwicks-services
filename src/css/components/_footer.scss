@@ -1,3 +1,58 @@
 footer {
-    background: #222;
+  position: relative;
+  bottom: 0;
+  background: #222;
+  padding: 20px;
+}
+
+.footer-social-icons {
+  font-size: 24px;
+  margin: 0 auto;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  li {
+    a {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: $footer-primary-color;
+      width: 40px;
+      height: 40px;
+      border: solid $footer-primary-color 1px;
+      border-radius: 100%;
+      &:hover {
+        border-color: $footer-hover-color;
+        color: $footer-hover-color;
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  padding-top: 20px;
+  color: $footer-primary-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  li {
+      padding: 5px;
+  }
+  a {
+    color: $footer-primary-color;
+    text-decoration: none;
+    &:hover {
+      color: $footer-hover-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 989px) {
 }
