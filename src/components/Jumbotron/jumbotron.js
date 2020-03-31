@@ -26,7 +26,9 @@ function Jumbotron() {
   return (
     <Swiper {...params}>
       <div className="swiper-slide slideImage1">
+        <div className="jumbotron-image-wrapper">
         <img src={slideImage1} className="jumbotron-image" alt="img3"></img>
+        </div>
         <div className="slide-content">
           <div className="slide-text">
             <h2>

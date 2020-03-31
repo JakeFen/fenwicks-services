@@ -50,7 +50,7 @@
       list-style-type: none;
       display: flex;
       flex-direction: column;
-      margin: 5px 0 0;
+      margin: 5px 0 10px;
       padding: 0;
       li {
         &:nth-child(1n + 2) {
@@ -128,7 +128,9 @@
                   left: 0;
                   bottom: -33px;
                   content: "";
-                  width: 100%;
+                  left: 2%;
+                  width: 96%;
+                  margin: 0 auto;
                   height: 4px;
                   background-color: $secondary-color;
                 }
@@ -149,7 +151,8 @@
       left: 0;
       bottom: -33px;
       content: "";
-      width: 100%;
+      left: 2%;
+      width: 96%;
       height: 4px;
       background-color: $secondary-color;
     }
