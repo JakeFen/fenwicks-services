@@ -285,7 +285,6 @@ footer {
 .slide-content h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
   font-size: 40px;
-  line-height: 1;
 }
 
 .swiper-pagination {
@@ -342,7 +341,7 @@ footer {
     top: 30%;
   }
   .slide-text {
-    width: 750px;
+    width: 700px;
   }
 }
 
@@ -390,7 +389,7 @@ footer {
 }
 
 .banner-image-wrapper {
-  padding: 25px;
+  padding: 40px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,19 +397,43 @@ footer {
       flex-wrap: wrap;
 }
 
-.banner-image-wrapper li {
+.banner-image-wrapper .banner-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner-image-wrapper .banner-image img {
   width: 100%;
 }
 
-.banner-image-wrapper li img {
-  width: 100%;
+.banner-image-wrapper .banner-image h2 {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner-image-wrapper .banner-image p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 750px) {
+  .banner-image-wrapper {
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .banner-image-wrapper .banner-image {
+    width: 30%;
+  }
 }
 
 body {
   background: white;
 }
 
-html {
+html, body {
   font-family: "Roboto Slab", serif;
 }
 /*# sourceMappingURL=style.css.map */

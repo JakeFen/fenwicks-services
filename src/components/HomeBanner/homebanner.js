@@ -5,23 +5,23 @@ function HomeBanner() {
   return (
     <div className="home-banner-wrapper">
       <ul className="banner-image-wrapper">
-        <li>
+        <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>Hello image 1</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <Link to="/">Read More</Link>
+          <h2>House Care</h2>
+          <p>Keep your lawn looking its best with the care it deserves.</p>
+          <Link to="/services">Read More</Link>
         </li>
-        <li>
+        <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>Hello image 1</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <Link to="/">Read More</Link>
+          <h2>Landscaping</h2>
+          <p>Keep your lawn looking its best with the care it deserves.</p>
+          <Link to="/services">Read More</Link>
         </li>
-        <li>
+        <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>Hello image 1</h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <Link to="/">Read More</Link>
+          <h2>Snow Removal</h2>
+          <p>Keep your lawn looking its best with the care it deserves.</p>
+          <Link to="/services">Read More</Link>
         </li>
       </ul>
     </div>
