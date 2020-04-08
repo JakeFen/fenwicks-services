@@ -1,12 +1,14 @@
+@import "./base/reset";
+
 $primary-color: #00803e;
 $secondary-color: #00994a;
 $footer-primary-color: #737373;
 $footer-hover-color: #e6e6e6;
 
-@import "./components/nav";
-@import "./components/footer";
-@import "./components/jumbotron";
-@import "./components/homebanner";
+@import "./partials/nav";
+@import "./partials/footer";
+@import "./partials/jumbotron";
+@import "./partials/homebanner";
 
 body {
   background: white;
