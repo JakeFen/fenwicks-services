@@ -30,7 +30,7 @@ function Jumbotron() {
           <img src={slideImage1} className="jumbotron-image" alt="img3"></img>
         </div>
         <div className="slide-content">
-          <div className="slide-text">
+          <div className="slide-text container">
             <h2>Keep your lawn and landscape looking it's best</h2>
             <div className="slide-button-container">
               <Link className="slide-button" to="/">
@@ -46,7 +46,7 @@ function Jumbotron() {
       <div className="swiper-slide slideImage2">
         <img src={slideImage2} className="jumbotron-image" alt="img3"></img>
         <div className="slide-content">
-          <div className="slide-text">
+          <div className="slide-text container">
             <h2>Keep your lawn and landscape looking it's best</h2>
             <div className="slide-button-container">
               <Link className="slide-button" to="/">
@@ -62,7 +62,7 @@ function Jumbotron() {
       <div className="swiper-slide slideImage3">
         <img src={slideImage3} className="jumbotron-image" alt="img3"></img>
         <div className="slide-content">
-          <div className="slide-text">
+          <div className="slide-text container">
             <h2>Keep your lawn and landscape looking it's best</h2>
             <div className="slide-button-container">
               <Link className="slide-button" to="/">

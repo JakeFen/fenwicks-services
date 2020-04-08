@@ -5,7 +5,7 @@ import Logo from "../../images/fenwicks_services_logo2.png";
 function Nav(props) {
   return (
     <div className="nav-wrapper">
-      <div className="nav-container">
+      <div className="nav-container container">
         <nav className="navbar">
           <div className="logo-wrapper">
             <Link

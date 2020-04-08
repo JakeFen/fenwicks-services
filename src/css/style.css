@@ -2,10 +2,6 @@
   z-index: 1000;
 }
 
-.nav-container {
-  margin: 0 auto;
-}
-
 .nav-container nav {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   padding: 5px 13px;
@@ -85,12 +81,6 @@
   padding: 15px 25px;
 }
 
-@media only screen and (min-width: 769px) {
-  .nav-container {
-    width: 80%;
-  }
-}
-
 @media only screen and (min-width: 989px) {
   .nav-wrapper {
     padding-top: 20px;
@@ -101,10 +91,9 @@
   }
   .nav-wrapper .nav-container {
     background-color: white;
-    width: 910px;
   }
   .nav-wrapper .nav-container nav {
-    padding: 2px 5px;
+    padding: 2px 0 2px 30px;
   }
   .nav-wrapper .nav-container nav ul {
     position: absolute;
@@ -119,7 +108,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 10px 0 50px;
+    padding: 0 30px 0 80px;
     background-color: #00803e;
   }
   .nav-wrapper .nav-container nav ul:before {
@@ -340,9 +329,6 @@ footer {
   .swiper-container .swiper-button-prev {
     top: 30%;
   }
-  .slide-text {
-    width: 700px;
-  }
 }
 
 @media only screen and (min-width: 989px) {
@@ -353,10 +339,6 @@ footer {
   }
   .swiper-pagination {
     display: block;
-  }
-  .slide-text {
-    width: 900px;
-    margin: 0 auto;
   }
   .slide-content {
     background: transparent;
@@ -389,7 +371,7 @@ footer {
 }
 
 .banner-image-wrapper {
-  padding: 40px 25px;
+  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,9 +402,9 @@ footer {
   .banner-image-wrapper {
     -ms-flex-wrap: initial;
         flex-wrap: initial;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .banner-image-wrapper .banner-image {
     width: 30%;
@@ -435,5 +417,29 @@ body {
 
 html, body {
   font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 989px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

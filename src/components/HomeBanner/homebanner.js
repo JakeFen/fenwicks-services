@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function HomeBanner() {
   return (
-    <div className="home-banner-wrapper">
+    <div className="home-banner-wrapper container">
       <ul className="banner-image-wrapper">
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
