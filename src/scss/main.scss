@@ -2,25 +2,33 @@
 
 $primary-color: #00803e;
 $secondary-color: #00994a;
-$footer-primary-color: #737373;
-$footer-hover-color: #e6e6e6;
+$dark-primary-color: #737373;
+$dark-hover-color: #e6e6e6;
 
 @import "./partials/nav";
 @import "./partials/footer";
 @import "./partials/jumbotron";
 @import "./partials/homebanner";
+@import "./partials/gallery-sample";
 
 body {
   background: white;
 }
 
-html, body {
+html,
+body {
   font-family: "Roboto Slab", serif;
 }
 
 .container {
   max-width: 100%;
   margin: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
 }
 
 @media (min-width: 768px) {
