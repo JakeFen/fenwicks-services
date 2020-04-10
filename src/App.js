@@ -5,8 +5,8 @@ import About from "./pages/about";
 import Service from "./pages/service";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/nav";
+import Footer from "./components/Footer/footer";
 
 class App extends Component {
   state = {
