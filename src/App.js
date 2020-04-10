@@ -30,7 +30,8 @@ class App extends Component {
 
     return (
       <Router>
-        <Nav
+        <h1>Hello</h1>
+        {/* <Nav
           toggleBurger={this.toggleBurger}
           showUl={showUl}
           activeNavPage={this.state.activeNavPage}
@@ -43,7 +44,7 @@ class App extends Component {
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
-        <Footer />
+        <Footer /> */}
       </Router>
     );
   }
