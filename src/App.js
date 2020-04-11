@@ -29,22 +29,25 @@ class App extends Component {
     const showUl = this.state.navCollapsed ? "showUl" : "";
 
     return (
-      <Router>
-        <Nav
-          toggleBurger={this.toggleBurger}
-          showUl={showUl}
-          activeNavPage={this.state.activeNavPage}
-          navRouting={this.navRouting}
-        />
-        {/* <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about-us" component={About} />
-          <Route exact path="/services" component={Service} />
-          <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch> */}
-        <Footer />
-      </Router>
+      <div>
+        <h1>Hello World</h1>
+      </div>
+      // <Router>
+      //   <Nav
+      //     toggleBurger={this.toggleBurger}
+      //     showUl={showUl}
+      //     activeNavPage={this.state.activeNavPage}
+      //     navRouting={this.navRouting}
+      //   />
+      //   <Switch>
+      //     <Route exact path="/" component={Home} />
+      //     <Route exact path="/about-us" component={About} />
+      //     <Route exact path="/services" component={Service} />
+      //     <Route exact path="/gallery" component={Gallery} />
+      //     <Route exact path="/contact" component={Contact} />
+      //   </Switch>
+      //   <Footer />
+      // </Router>
     );
   }
 }
