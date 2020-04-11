@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Service from "./pages/service";
@@ -29,9 +29,7 @@ class App extends Component {
     const showUl = this.state.navCollapsed ? "showUl" : "";
 
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <Home></Home>
       // <Router>
       //   <Nav
       //     toggleBurger={this.toggleBurger}
