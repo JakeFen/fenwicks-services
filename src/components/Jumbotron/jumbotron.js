@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import slideImage1 from "../../images/JumboImages/slide-image1.jpeg";
 import slideImage2 from "../../images/JumboImages/slide-image2.jpeg";
 import slideImage3 from "../../images/JumboImages/slide-image3.jpeg";
