@@ -6,9 +6,10 @@ import GallerySample from "../components/GallerySample/gallery-sample";
 function Home() {
   return (
     <main>
-      <Jumbotron />
+      <h1>Hello World</h1>
+      {/* <Jumbotron />
       <HomeBanner />
-      <GallerySample />
+      <GallerySample /> */}
     </main>
   );
 }

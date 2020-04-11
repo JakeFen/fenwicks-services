@@ -1,5 +1,5 @@
 import React from "react";
-// import Swiper from "react-id-swiper";
+import Swiper from "react-id-swiper";
 
 function GallerySample() {
   const params = {
@@ -15,13 +15,13 @@ function GallerySample() {
   return (
     <div className="gallery-sample-container">
       <div className="container">
-        {/* <Swiper {...params}>
+        <Swiper {...params}>
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-        </Swiper> */}
+        </Swiper>
       </div>
     </div>
   );
