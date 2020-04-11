@@ -29,7 +29,8 @@ class App extends Component {
     const showUl = this.state.navCollapsed ? "showUl" : "";
 
     return (
-      <Home></Home>
+      <div><h1>Hello World</h1></div>
+      // <Home></Home>
       // <Router>
       //   <Nav
       //     toggleBurger={this.toggleBurger}
