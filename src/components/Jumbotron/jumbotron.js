@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import slideImage1 from "../../images/JumboImages/slide-image1.jpeg";
 import slideImage2 from "../../images/JumboImages/slide-image2.jpeg";
 import slideImage3 from "../../images/JumboImages/slide-image3.jpeg";
-import Swiper from "react-id-swiper";
+// import Swiper from "react-id-swiper";
 
 function Jumbotron() {
   const params = {
@@ -25,7 +25,7 @@ function Jumbotron() {
 
   return (
     <div className="jumbo-swiper">
-      <Swiper {...params}>
+      {/* <Swiper {...params}>
         <div className="swiper-slide slideImage1">
           <div className="jumbotron-image-wrapper">
             <img src={slideImage1} className="jumbotron-image" alt="img3"></img>
@@ -76,7 +76,7 @@ function Jumbotron() {
             </div>
           </div>
         </div>
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 }
