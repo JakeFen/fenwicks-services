@@ -1,7 +1,7 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron/jumbotron";
 import HomeBanner from "../components/HomeBanner/homebanner";
-// import GallerySample from "../components/GallerySample/gallery-sample";
+import GallerySample from "../components/GallerySample/gallery-sample";
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
       <h1>Hello World</h1>
       <Jumbotron />
       <HomeBanner />
-      {/* <GallerySample /> */}
+      <GallerySample />
     </main>
   );
 }
