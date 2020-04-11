@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import About from "./pages/about";
 import Service from "./pages/service";
 import Gallery from "./pages/gallery";
@@ -29,22 +29,23 @@ class App extends Component {
     const showUl = this.state.navCollapsed ? "showUl" : "";
 
     return (
-      <Router>
-        <Nav
-          toggleBurger={this.toggleBurger}
-          showUl={showUl}
-          activeNavPage={this.state.activeNavPage}
-          navRouting={this.navRouting}
-        />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about-us" component={About} />
-          <Route exact path="/services" component={Service} />
-          <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-        <Footer />
-      </Router>
+      <Home></Home>
+      // <Router>
+      //   <Nav
+      //     toggleBurger={this.toggleBurger}
+      //     showUl={showUl}
+      //     activeNavPage={this.state.activeNavPage}
+      //     navRouting={this.navRouting}
+      //   />
+      //   <Switch>
+      //     <Route exact path="/" component={Home} />
+      //     <Route exact path="/about-us" component={About} />
+      //     <Route exact path="/services" component={Service} />
+      //     <Route exact path="/gallery" component={Gallery} />
+      //     <Route exact path="/contact" component={Contact} />
+      //   </Switch>
+      //   <Footer />
+      // </Router>
     );
   }
 }
