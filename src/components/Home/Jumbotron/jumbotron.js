@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import slideImage1 from "../../images/JumboImages/slide-image1.jpeg";
-import slideImage2 from "../../images/JumboImages/slide-image2.jpeg";
-import slideImage3 from "../../images/JumboImages/slide-image3.jpeg";
+import slideImage1 from "../../../images/JumboImages/slide-image1.jpeg";
+import slideImage2 from "../../../images/JumboImages/slide-image2.jpeg";
+import slideImage3 from "../../../images/JumboImages/slide-image3.jpeg";
 import Swiper from "react-id-swiper";
 
 function Jumbotron() {
@@ -34,10 +34,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   ABOUT US
                 </Link>
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   CONTACT US
                 </Link>
               </div>
@@ -50,10 +50,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   GALLERY
                 </Link>
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   CONTACT US
                 </Link>
               </div>
@@ -66,10 +66,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   SERVICES
                 </Link>
-                <Link className="slide-button" to="/">
+                <Link className="link-button" to="/">
                   CONTACT US
                 </Link>
               </div>

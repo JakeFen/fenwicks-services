@@ -1,15 +1,16 @@
 import React from "react";
-import Jumbotron from "../components/Jumbotron/jumbotron";
-import HomeBanner from "../components/HomeBanner/homebanner";
-import GallerySample from "../components/GallerySample/gallery-sample";
+import Jumbotron from "../components/Home/Jumbotron/jumbotron";
+import HomeBanner from "../components/Home/HomeBanner/homebanner";
+import GallerySample from "../components/Home/GallerySample/gallery-sample";
+import ContactBanner from "../components/Home/ContactBanner/contact-banner"
 
 function Home() {
   return (
     <main>
-      <h1>Hello World</h1>
       <Jumbotron />
       <HomeBanner />
       <GallerySample />
+      <ContactBanner/>
     </main>
   );
 }
