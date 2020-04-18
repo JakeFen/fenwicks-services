@@ -52,6 +52,87 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background: white;
+}
+
+html,
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header-green {
+  color: #00803e;
+}
+
+.link-button-green,
+.link-button-trans {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  color: white;
+  padding: 18px 22px;
+}
+
+.link-button-green:hover,
+.link-button-trans:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.link-button-green {
+  background: #00803e;
+  border: #00803e;
+}
+
+.link-button-green:hover {
+  background: #00994a;
+  border: #00994a;
+}
+
+.link-button-trans {
+  margin-left: 10px;
+  border: solid #b3b3b3 1px;
+}
+
+.link-button-trans:hover {
+  border: solid white 1px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 989px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
 .nav-wrapper {
   z-index: 1000;
 }
@@ -387,7 +468,7 @@ footer {
 }
 
 .banner-image-wrapper {
-  margin-top: 45px;
+  margin: 55px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +509,7 @@ footer {
 }
 
 .gallery-sample-container {
-  padding: 40px 0;
+  padding: 50px 0;
   background: #222;
 }
 
@@ -436,10 +517,6 @@ footer {
   font-size: 40px;
   color: white;
   margin-bottom: 30px;
-}
-
-.gallery-sample-container .gallery-sample-header span {
-  color: #00803e;
 }
 
 .gallery-sample-container .gallery-button-container {
@@ -459,81 +536,67 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 55px 0;
 }
 
-body {
-  background: white;
+.contact-banner-container .mission-container,
+.contact-banner-container .contact-container {
+  width: calc(50% - (0.5 * 70px));
 }
 
-html,
-body {
-  font-family: "Roboto Slab", serif;
+.contact-banner-container .mission-header,
+.contact-banner-container .questions-header {
+  font-weight: bolder;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: dashed #d9d9d9 1px;
 }
 
-.container {
-  max-width: 100%;
-  margin: auto;
+.contact-banner-container .mission-header {
+  font-size: 40px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: white;
-  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
-          filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
+.contact-banner-container .questions-header {
+  font-size: 30px;
 }
 
-.text-center {
-  text-align: center;
+.contact-banner-container .contact-container {
+  border: solid #e6e6e6 7px;
+  padding: 25px 35px;
 }
 
-.link-button {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-  font-size: 18px;
-  color: white;
-  background-color: transparent;
-  padding: 18px 22px;
+.contact-banner-container .contact-form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.link-button:hover {
-  text-decoration: none;
-  color: white;
+.contact-banner-container .contact-form-flex input,
+.contact-banner-container .contact-form-flex select {
+  height: 45px;
+  color: #757575;
 }
 
-.link-button:nth-child(odd) {
-  margin-right: 10px;
-  background: #00803e;
-  border: #00803e;
+.contact-banner-container .contact-form-flex textarea {
+  height: 175px;
+  color: #757575;
 }
 
-.link-button:nth-child(odd):hover {
-  background: #00994a;
-  border: #00994a;
+.contact-banner-container .contact-input {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  background: #f8f8f8;
+  border: solid #f3f3f3 1px;
+  padding: 10px 15px;
+  margin: 7px 0 20px 0;
 }
 
-.link-button:nth-child(even) {
-  border: solid #b3b3b3 1px;
-}
-
-.link-button:nth-child(even):hover {
-  border: solid white 1px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media (min-width: 989px) {
-  .container {
-    max-width: 960px;
-    padding: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1150px;
-  }
+.contact-banner-container .contact-submit {
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */

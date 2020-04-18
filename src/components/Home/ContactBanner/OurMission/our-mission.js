@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function OurMission() {
   return (
-    <div>
-      <h1>
-        Our <span>Mission</span>
-      </h1>
+    <div className="mission-container">
+      <h2 className="mission-header">
+        Our <span className="header-green">Mission</span>
+      </h2>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

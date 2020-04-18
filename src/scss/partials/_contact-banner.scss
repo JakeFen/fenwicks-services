@@ -1,4 +1,60 @@
 .contact-banner-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 55px 0;
+  .mission-container,
+  .contact-container {
+    width: calc(50% - (0.5 * 70px));
+  }
+
+  .mission-header,
+  .questions-header {
+    font-weight: bolder;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dashed #d9d9d9 1px;
+  }
+
+  .mission-header {
+    font-size: 40px;
+  }
+
+  .questions-header {
+    font-size: 30px;
+  }
+
+  .contact-container {
+    border: solid #e6e6e6 7px;
+    padding: 25px 35px;
+  }
+
+  .contact-form-flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    input,
+    select {
+      height: 45px;
+      color: #757575;
+    }
+    textarea {
+      height: 175px;
+      color: #757575;
+
+    }
+  }
+
+  .contact-input {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    background: #f8f8f8;
+    border: solid #f3f3f3 1px;
+    padding: 10px 15px;
+    margin: 7px 0 20px 0;
+  }
+
+  .contact-submit {
+    float: right;
+  }
 }

@@ -34,10 +34,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="link-button" to="/">
+                <Link className="link-button-green" to="/about-us">
                   ABOUT US
                 </Link>
-                <Link className="link-button" to="/">
+                <Link className="link-button-trans" to="/contact">
                   CONTACT US
                 </Link>
               </div>
@@ -50,10 +50,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="link-button" to="/">
+                <Link className="link-button-green" to="/gallery">
                   GALLERY
                 </Link>
-                <Link className="link-button" to="/">
+                <Link className="link-button-trans" to="/contact">
                   CONTACT US
                 </Link>
               </div>
@@ -66,10 +66,10 @@ function Jumbotron() {
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
               <div className="slide-button-container">
-                <Link className="link-button" to="/">
+                <Link className="link-button-green" to="/services">
                   SERVICES
                 </Link>
-                <Link className="link-button" to="/">
+                <Link className="link-button-trans" to="/contact">
                   CONTACT US
                 </Link>
               </div>

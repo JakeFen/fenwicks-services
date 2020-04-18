@@ -17,7 +17,7 @@ function GallerySample() {
     <div className="gallery-sample-container">
       <div className="container">
         <h2 className="text-center gallery-sample-header">
-          Gallery <span>Sample</span>
+          Gallery <span className="header-green">Sample</span>
         </h2>
         <Swiper {...params}>
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
@@ -27,7 +27,7 @@ function GallerySample() {
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
         </Swiper>
         <div className="gallery-button-container">
-          <Link className="link-button" to="/gallery">
+          <Link className="link-button-green" to="/gallery">
             View Gallery
           </Link>
         </div>

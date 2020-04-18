@@ -1,0 +1,75 @@
+body {
+  background: white;
+}
+
+html,
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 0 0 3px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header-green {
+  color: $primary-color;
+}
+
+.link-button-green,
+.link-button-trans {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  color: white;
+  padding: 18px 22px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.link-button-green {
+  background: $primary-color;
+  border: $primary-color;
+  &:hover {
+    background: $secondary-color;
+    border: $secondary-color;
+  }
+}
+
+.link-button-trans {
+  margin-left: 10px;
+  border: solid #b3b3b3 1px;
+  &:hover {
+    border: solid white 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 989px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
