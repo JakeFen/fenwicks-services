@@ -1,11 +1,8 @@
 .contact-banner-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   padding: 55px 0;
-  .mission-container,
-  .contact-container {
-    width: calc(50% - (0.5 * 70px));
-  }
 
   .mission-header,
   .questions-header {
@@ -30,7 +27,9 @@
 
   .contact-form-flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
     input,
     select {
       height: 45px;
@@ -39,7 +38,6 @@
     textarea {
       height: 175px;
       color: #757575;
-
     }
   }
 
@@ -56,5 +54,29 @@
 
   .contact-submit {
     float: right;
+  }
+}
+
+@media only screen and (min-width: 989px) {
+  .contact-banner-container {
+    flex-direction: row;
+
+    .mission-container,
+    .contact-container {
+      width: calc(50% - (0.5 * 70px));
+    }
+
+    .contact-form-info {
+      padding-right: 15px;
+    }
+
+    .contact-form-info, .contact-form-message {
+      width: 100%;
+    }
+
+    .contact-form-flex {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

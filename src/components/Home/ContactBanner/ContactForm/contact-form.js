@@ -8,7 +8,7 @@ function ContactForm() {
       </h2>
       <form>
         <div className="contact-form-flex">
-          <div>
+          <div className="contact-form-info">
             <input
               type="text"
               name="fullname"
@@ -28,7 +28,7 @@ function ContactForm() {
               <option value="Other">Other</option>
             </select>
           </div>
-          <div>
+          <div className="contact-form-message">
             <textarea row="10" className="contact-input" placeholder="Message"></textarea>
           </div>
         </div>
