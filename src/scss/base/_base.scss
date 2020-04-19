@@ -2,6 +2,16 @@ body {
   background: white;
 }
 
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+.paragraph {
+  line-height: 1.5;
+  color: #999;
+}
+
 html,
 body {
   font-family: "Roboto Slab", serif;

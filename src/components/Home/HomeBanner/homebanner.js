@@ -8,20 +8,20 @@ function HomeBanner() {
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <h2>House Care</h2>
-          <p>Keep your lawn looking its best with the care it deserves.</p>
-          <Link to="/services">Read More</Link>
+          <p className="paragraph">Keep your lawn looking its best with the care it deserves.</p>
+          <Link className="header-green" to="/services">Read More!</Link>
         </li>
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <h2>Landscaping</h2>
-          <p>Keep your lawn looking its best with the care it deserves.</p>
-          <Link to="/services">Read More</Link>
+          <p className="paragraph">Keep your lawn looking its best with the care it deserves.</p>
+          <Link className="header-green" to="/services">Read More!</Link>
         </li>
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <h2>Snow Removal</h2>
-          <p>Keep your lawn looking its best with the care it deserves.</p>
-          <Link to="/services">Read More</Link>
+          <p className="paragraph">Keep your lawn looking its best with the care it deserves.</p>
+          <Link className="header-green" to="/services">Read More!</Link>
         </li>
       </ul>
     </div>

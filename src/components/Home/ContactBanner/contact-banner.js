@@ -7,7 +7,7 @@ function ContactBanner() {
     <div className="contact-banner-container container">
       <OurMission />
       <ContactForm />
-    </div>
+      </div>
   );
 }
 

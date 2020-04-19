@@ -7,7 +7,7 @@ function OurMission() {
       <h2 className="mission-header">
         Our <span className="header-green">Mission</span>
       </h2>
-      <p>
+      <p className="paragraph">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -16,7 +16,7 @@ function OurMission() {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum."
       </p>
-      <Link>Read More!</Link>
+      <Link className="header-green">Read More!</Link>
     </div>
   );
 }
