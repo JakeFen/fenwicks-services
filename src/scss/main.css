@@ -146,6 +146,10 @@ h3 {
   border: solid white 1px;
 }
 
+.modal-backdrop {
+  opacity: 0.8 !important;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -696,12 +700,56 @@ footer {
 }
 
 .gallery-field .gallery-image {
-  width: 32%;
+  position: relative;
+  background: black;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+.gallery-field .gallery-image:hover {
+  cursor: pointer;
+}
+
+.gallery-field .gallery-image:hover:before {
+  pointer-events: none;
+  position: absolute;
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f055";
+  font-weight: 900;
+  font-size: 30px;
+  color: #00994a;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.gallery-field .gallery-image:hover img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
 }
 
 .gallery-field .gallery-image img {
+  display: block;
   height: auto;
   width: 100%;
-  margin-bottom: 30px;
+}
+
+.gallery-field .gallery-image svg {
+  cursor: pointer;
+  color: #00994a;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 750px) {
+  .gallery-image {
+    width: 32%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

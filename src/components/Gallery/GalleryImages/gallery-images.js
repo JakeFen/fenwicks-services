@@ -1,11 +1,16 @@
 import React from "react";
 
 function GalleryImages(props) {
-  console.log(props.images);
   return (
     <ul className="gallery-field">
       {props.images.map((image) => (
-        <li className="gallery-image">
+        <li
+          className="gallery-image"
+          key={image.key}
+          data-toggle={"modal"}
+          data-target={"#EventModal"}
+          onClick={ event => props.toggleModal(event)}
+        >
           <img src={image.url} alt={image.alt} />
         </li>
       ))}
