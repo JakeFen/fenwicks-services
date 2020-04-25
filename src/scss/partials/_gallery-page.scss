@@ -1,0 +1,14 @@
+.gallery-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    .gallery-image {
+        width: 32%;
+        img {
+            height: auto;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}

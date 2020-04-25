@@ -56,11 +56,6 @@ body {
   background: white;
 }
 
-h1,
-h2 {
-  line-height: 1.2;
-}
-
 .paragraph {
   line-height: 1.5;
   color: #999;
@@ -74,6 +69,33 @@ body {
 .container {
   max-width: 100%;
   margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.page-header {
+  padding: 40px 0;
+  background-color: #f2f2f2;
+  background: url("./../images/Header/header.jpg");
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.header-subtitle {
+  color: #808080;
+  margin-top: 5px;
 }
 
 .swiper-button-prev,
@@ -133,7 +155,11 @@ body {
 @media (min-width: 989px) {
   .container {
     max-width: 960px;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-header {
+    padding: 85px 0 60px;
   }
 }
 
@@ -321,7 +347,7 @@ footer {
 .footer-social-icons {
   font-size: 24px;
   margin: 0 auto;
-  width: 200px;
+  width: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,8 +533,6 @@ footer {
 
 @media only screen and (min-width: 750px) {
   .banner-image-wrapper {
-    -ms-flex-wrap: initial;
-        flex-wrap: initial;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -657,5 +681,27 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.gallery-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+
+.gallery-field .gallery-image {
+  width: 32%;
+}
+
+.gallery-field .gallery-image img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

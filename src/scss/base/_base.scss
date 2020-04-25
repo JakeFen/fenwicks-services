@@ -2,11 +2,6 @@ body {
   background: white;
 }
 
-h1,
-h2 {
-  line-height: 1.2;
-}
-
 .paragraph {
   line-height: 1.5;
   color: #999;
@@ -22,6 +17,35 @@ body {
   margin: auto;
 }
 
+/////PAGE TITLES///////
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.page-header {
+  padding: 40px 0;
+  background-color: #f2f2f2;
+  background: url("./../images/Header/header.jpg");
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.header-subtitle {
+  color: #808080;
+  margin-top: 5px;
+}
+
+//////////////////////
 .swiper-button-prev,
 .swiper-button-next {
   color: white;
@@ -74,7 +98,12 @@ body {
 @media (min-width: 989px) {
   .container {
     max-width: 960px;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-header {
+    padding: 85px 0 60px;
   }
 }
 
