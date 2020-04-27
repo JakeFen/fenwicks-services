@@ -1,14 +1,45 @@
-import React from "react";
+import React, { Component } from "react";
 import ContactForm from "./ContactForm/contact-form.js";
-import OurMission from "./OurMission/our-mission.js";
+import OurMission from "./OurMission/our-mission";
 
-function ContactBanner() {
-  return (
-    <div className="contact-banner-container container">
-      <OurMission />
-      <ContactForm />
+class ContactBanner extends Component {
+  state = {
+    selectField: [
+      {
+        value: "landscaping",
+        name: "Landscaping",
+      },
+      {
+        value: "house-care",
+        name: "House Care",
+      },
+      {
+        value: "snow-removal",
+        name: "Snow Removal",
+      },
+      {
+        value: "other",
+        name: "Other",
+      },
+    ],
+  };
+
+  onSubmit = (event) => {
+    event.preventDefault();
+    console.log("You clicked me!!");
+  };
+
+  render() {
+    return (
+      <div className="contact-banner-container container">
+        <OurMission />
+        <ContactForm
+          selectField={this.state.selectField}
+          onSubmit={this.onSubmit}
+        />
       </div>
-  );
+    );
+  }
 }
 
 export default ContactBanner;

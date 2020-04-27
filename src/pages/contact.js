@@ -1,11 +1,14 @@
 import React from "react";
 import PageHeader from "../components/PageHeader/page-header";
+import CompanyInfo from "../components/Contact/CompanyInfo/companyInfo";
+import Form from "../components/Contact/Form/form";
 
 function Contact() {
   return (
     <main>
       <PageHeader title="Contact" subtitle="A taste of our best work" />
-      <h1>Contact Page</h1>
+      <Form />
+      <CompanyInfo />
     </main>
   );
 }

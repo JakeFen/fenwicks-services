@@ -9,7 +9,7 @@ function GalleryImages(props) {
           key={image.key}
           data-toggle={"modal"}
           data-target={"#EventModal"}
-          onClick={ event => props.toggleModal(event)}
+          onClick={(event) => props.toggleModal(event)}
         >
           <img src={image.url} alt={image.alt} />
         </li>

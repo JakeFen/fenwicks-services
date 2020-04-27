@@ -1,6 +1,9 @@
 import React from "react";
+import Input from "../../../Input/input";
+import SelectField from "../../../SelectField/selectField";
+import Button from "../../../Button/button";
 
-function ContactForm() {
+function ContactForm(props) {
   return (
     <div className="contact-container">
       <h2 className="questions-header text-center">
@@ -9,31 +12,39 @@ function ContactForm() {
       <form>
         <div className="contact-form-flex">
           <div className="contact-form-info">
-            <input
+            <Input
+              name="home-fullname"
               type="text"
-              name="fullname"
               placeholder="Name"
               className="contact-input"
-            ></input>
-            <input
-              type="text"
-              name="email"
+              required
+            />
+            <Input
+              name="home-email"
+              type="email"
               placeholder="Email"
               className="contact-input"
-            ></input>
-            <select className="contact-input">
-              <option value="landscaping">Landscaping</option>
-              <option value="house-care">House Care</option>
-              <option value="snow-removal">Snow Removal</option>
-              <option value="Other">Other</option>
-            </select>
+              required
+            />
+            <SelectField
+              className="contact-input"
+              options={props.selectField}
+            />
           </div>
           <div className="contact-form-message">
-            <textarea row="10" className="contact-input" placeholder="Message"></textarea>
+            <textarea
+              row="10"
+              className="contact-input"
+              placeholder="Message"
+            ></textarea>
           </div>
         </div>
-
-        <input type="submit" value="Submit" className="link-button-green contact-submit" />
+        <Button
+          type="submit"
+          className="link-button-green contact-submit"
+          label="Submit"
+          handleClick={(event) => props.onSubmit(event)}
+        />
       </form>
     </div>
   );

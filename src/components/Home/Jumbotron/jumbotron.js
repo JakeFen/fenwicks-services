@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import slideImage1 from "../../../images/JumboImages/slide-image1.jpeg";
-import slideImage2 from "../../../images/JumboImages/slide-image2.jpeg";
-import slideImage3 from "../../../images/JumboImages/slide-image3.jpeg";
+import slideImage11920w from "../../../images/JumboImages/slide-image1-1920w.jpeg";
+import slideImage11080w from "../../../images/JumboImages/slide-image1-1080w.jpeg";
+import slideImage1480w from "../../../images/JumboImages/slide-image1-480w.jpeg";
+import slideImage21920w from "../../../images/JumboImages/slide-image2-1920w.jpeg";
+import slideImage21080w from "../../../images/JumboImages/slide-image2-1080w.jpeg";
+import slideImage2480w from "../../../images/JumboImages/slide-image2-480w.jpeg";
+import slideImage31920w from "../../../images/JumboImages/slide-image3-1920w.jpeg";
+import slideImage31080w from "../../../images/JumboImages/slide-image3-1080w.jpeg";
+import slideImage3480w from "../../../images/JumboImages/slide-image3-480w.jpeg";
+
 import Swiper from "react-id-swiper";
 
 function Jumbotron() {
@@ -28,7 +35,13 @@ function Jumbotron() {
       <Swiper {...params}>
         <div className="swiper-slide slideImage1">
           <div className="jumbotron-image-wrapper">
-            <img src={slideImage1} className="jumbotron-image" alt="img3"></img>
+            <img
+              src={slideImage11920w}
+              srcSet={`${slideImage1480w} 480w, ${slideImage11080w} 1080w, ${slideImage11920w} 1920w`}
+              sizes="100vw"
+              className="jumbotron-image"
+              alt="img3"
+            ></img>
           </div>
           <div className="slide-content">
             <div className="slide-text container">
@@ -45,7 +58,13 @@ function Jumbotron() {
           </div>
         </div>
         <div className="swiper-slide slideImage2">
-          <img src={slideImage2} className="jumbotron-image" alt="img3"></img>
+          <img
+            src={slideImage21920w}
+            srcSet={`${slideImage2480w} 480w, ${slideImage21080w} 1080w, ${slideImage21920w} 1920w`}
+            sizes="100vw"
+            className="jumbotron-image"
+            alt="img3"
+          ></img>
           <div className="slide-content">
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
@@ -61,7 +80,13 @@ function Jumbotron() {
           </div>
         </div>
         <div className="swiper-slide slideImage3">
-          <img src={slideImage3} className="jumbotron-image" alt="img3"></img>
+          <img
+            src={slideImage31920w}
+            srcSet={`${slideImage3480w} 480w, ${slideImage31080w} 1080w, ${slideImage31920w} 1920w`}
+            sizes="100vw"
+            className="jumbotron-image"
+            alt="img3"
+          ></img>
           <div className="slide-content">
             <div className="slide-text container">
               <h2>Keep your lawn and landscape looking it's best</h2>
