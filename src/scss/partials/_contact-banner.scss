@@ -42,26 +42,6 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  input,
-  select {
-    height: 45px;
-    color: #757575;
-  }
-  textarea {
-    height: 175px;
-    color: #757575;
-  }
-}
-
-.contact-input {
-  display: block;
-  font-size: 14px;
-  font-weight: normal;
-  width: 100%;
-  background: #f8f8f8;
-  border: solid #f3f3f3 1px;
-  padding: 10px 15px;
-  margin: 7px 0 20px 0;
 }
 
 .contact-submit {

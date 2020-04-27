@@ -8,23 +8,23 @@
     img {
       width: 100%;
     }
-    h2 {
+    h3 {
       margin: 15px 0;
       font-size: 24px;
       font-weight: bold;
     }
     p {
       margin-bottom: 10px;
-    } 
+    }
   }
 }
 
 @media only screen and (min-width: 750px) {
-    .banner-image-wrapper {
-        // flex-wrap: initial;
-        justify-content: space-between;
-        .banner-image {
-            width: 30%;
-        }
+  .banner-image-wrapper {
+    // flex-wrap: initial;
+    justify-content: space-between;
+    .banner-image {
+      width: 30%;
     }
+  }
 }

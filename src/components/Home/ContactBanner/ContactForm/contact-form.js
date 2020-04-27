@@ -6,9 +6,9 @@ import Button from "../../../Button/button";
 function ContactForm(props) {
   return (
     <div className="contact-container">
-      <h2 className="questions-header text-center">
+      <h3 className="questions-header text-center">
         Have <span className="header-green">Questions?</span>
-      </h2>
+      </h3>
       <form>
         <div className="contact-form-flex">
           <div className="contact-form-info">
@@ -27,6 +27,7 @@ function ContactForm(props) {
               required
             />
             <SelectField
+              services="home-contact-services"
               className="contact-input"
               options={props.selectField}
             />
@@ -34,15 +35,15 @@ function ContactForm(props) {
           <div className="contact-form-message">
             <textarea
               row="10"
-              className="contact-input"
+              className="contact-textfield"
               placeholder="Message"
             ></textarea>
           </div>
         </div>
         <Button
+          label="Submit"
           type="submit"
           className="link-button-green contact-submit"
-          label="Submit"
           handleClick={(event) => props.onSubmit(event)}
         />
       </form>

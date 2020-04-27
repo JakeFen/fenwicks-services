@@ -5,17 +5,25 @@ function Footer() {
     <footer>
       <ul className="footer-social-icons">
         <li>
-          <a href="https://www.facebook.com/FenwicksServices/">
+          <a
+            href="https://www.facebook.com/FenwicksServices/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="fab fa-facebook-f"></i>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/" rel="noopener noreferrer" target="_blank">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/fenwicks_services/">
+          <a
+            href="https://www.instagram.com/fenwicks_services/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i className="fab fa-instagram"></i>
           </a>
         </li>

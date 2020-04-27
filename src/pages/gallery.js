@@ -69,24 +69,23 @@ class Gallery extends Component {
   changeImageFilterDark = (e) => {
     e.target.style.filter = "brightness(40%)";
     e.target.nextElementSibling.style.display = "block";
-  }
+  };
 
   changeImageFilterDefault = (e) => {
-    console.log(e.target.nextSibling.tagName)
+    console.log(e.target.nextSibling.tagName);
     e.target.style.filter = "none";
     if (e.target.nextSibling.tagName === "svg") {
       e.target.nextSibling.style.display = "none";
     }
-  }
+  };
 
   toggleModal = (event) => {
     const url = event.target.getAttribute("src");
     const alt = event.target.getAttribute("alt");
     this.setState({ currentUrl: url, currentAlt: alt });
-  }
+  };
 
   render() {
-    
     return (
       <main>
         <PageHeader title="Gallery" subtitle="A taste of our best work" />

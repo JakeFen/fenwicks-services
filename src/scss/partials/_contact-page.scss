@@ -1,0 +1,17 @@
+.contact-image-container {
+  margin: 40px auto;
+
+  .contact-form-header {
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dashed #d9d9d9 1px;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: $primary-color;
+  }
+}

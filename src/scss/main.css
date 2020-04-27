@@ -150,6 +150,27 @@ h3 {
   opacity: 0.8 !important;
 }
 
+.contact-input,
+.contact-textfield {
+  color: #757575;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  background: #f8f8f8;
+  border: solid #f3f3f3 1px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  height: 45px;
+}
+
+.contact-textfield {
+  height: calc(100% - 20px);
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -524,7 +545,7 @@ footer {
   width: 100%;
 }
 
-.banner-image-wrapper .banner-image h2 {
+.banner-image-wrapper .banner-image h3 {
   margin: 15px 0;
   font-size: 24px;
   font-weight: bold;
@@ -630,28 +651,6 @@ footer {
           flex-grow: 1;
 }
 
-.contact-form-flex input,
-.contact-form-flex select {
-  height: 45px;
-  color: #757575;
-}
-
-.contact-form-flex textarea {
-  height: 175px;
-  color: #757575;
-}
-
-.contact-input {
-  display: block;
-  font-size: 14px;
-  font-weight: normal;
-  width: 100%;
-  background: #f8f8f8;
-  border: solid #f3f3f3 1px;
-  padding: 10px 15px;
-  margin: 7px 0 20px 0;
-}
-
 .contact-submit {
   float: right;
 }
@@ -750,5 +749,24 @@ footer {
   .gallery-image {
     width: 32%;
   }
+}
+
+.contact-image-container {
+  margin: 40px auto;
+}
+
+.contact-image-container .contact-form-header {
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: dashed #d9d9d9 1px;
+}
+
+.contact-image-container label {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #00803e;
 }
 /*# sourceMappingURL=main.css.map */

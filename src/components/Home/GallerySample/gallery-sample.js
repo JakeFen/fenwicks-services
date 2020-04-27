@@ -27,9 +27,9 @@ function GallerySample() {
   return (
     <div className="gallery-sample-container">
       <div className="container">
-        <h2 className="text-center gallery-sample-header">
+        <h3 className="text-center gallery-sample-header">
           Gallery <span className="header-green">Sample</span>
-        </h2>
+        </h3>
         <Swiper {...params}>
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
           <img src="https://via.placeholder.com/150x90/" alt="image1" />

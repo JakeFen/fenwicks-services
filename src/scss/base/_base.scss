@@ -46,6 +46,7 @@ h3 {
 }
 
 //////////////////////
+
 .swiper-button-prev,
 .swiper-button-next {
   color: white;
@@ -92,6 +93,31 @@ h3 {
 .modal-backdrop {
   opacity: 0.8 !important;
 }
+
+/////////////////////////
+
+.contact-input,
+.contact-textfield {
+  color: #757575;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  background: #f8f8f8;
+  border: solid #f3f3f3 1px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  height: 45px;
+}
+
+.contact-textfield {
+  height: calc(100% - 20px);
+}
+
+//////////////////////////
 
 @media (min-width: 768px) {
   .container {

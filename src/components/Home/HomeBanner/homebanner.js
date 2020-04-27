@@ -7,7 +7,7 @@ function HomeBanner() {
       <ul className="banner-image-wrapper">
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>Landscaping</h2>
+          <h3>Landscaping</h3>
           <p className="paragraph">
             Keep your lawn looking its best with the care it deserves.
           </p>
@@ -17,7 +17,7 @@ function HomeBanner() {
         </li>
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>House Care</h2>
+          <h3>House Care</h3>
           <p className="paragraph">
             Keep your lawn looking its best with the care it deserves.
           </p>
@@ -27,7 +27,7 @@ function HomeBanner() {
         </li>
         <li className="banner-image">
           <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <h2>Snow Removal</h2>
+          <h3>Snow Removal</h3>
           <p className="paragraph">
             Keep your lawn looking its best with the care it deserves.
           </p>

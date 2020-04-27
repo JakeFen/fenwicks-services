@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function OurMission() {
   return (
     <div className="mission-container">
-      <h2 className="mission-header">
+      <h3 className="mission-header">
         Our <span className="header-green">Mission</span>
-      </h2>
+      </h3>
       <p className="paragraph">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
