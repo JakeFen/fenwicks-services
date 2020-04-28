@@ -1,5 +1,9 @@
-.contact-image-container {
+.contact-page-container {
   margin: 40px auto;
+
+  .contact-form-wrapper {
+    overflow: hidden;
+  }
 
   .contact-form-header {
     font-size: 40px;
@@ -10,8 +14,11 @@
   }
   label {
     font-weight: bold;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: $primary-color;
+  }
+  textarea {
+    height: calc(100% - 136px);
   }
 }

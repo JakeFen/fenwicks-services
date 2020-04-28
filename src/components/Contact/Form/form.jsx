@@ -5,13 +5,13 @@ import Button from "../../Button/button";
 
 const Form = (props) => {
   return (
-    <div>
+    <div className="contact-form-wrapper">
       <h3 className="contact-form-header">
         Leave <span className="header-green">A Message</span>
       </h3>
       <form>
-        <div className="">
-          <div className="">
+        <div className="contact-form-flex">
+          <div className="contact-form-info">
             <Input
               label="Name: *"
               name="contact-fname"
@@ -44,14 +44,14 @@ const Form = (props) => {
               className="contact-input"
               required
             />
+          </div>
+          <div className="contact-form-message">
             <SelectField
               services="contact-services"
               label="Subject: *"
               className="contact-input"
               options={props.selectField}
             />
-          </div>
-          <div>
             <label htmlFor="contact-message" className="">
               Message
             </label>
@@ -66,7 +66,7 @@ const Form = (props) => {
         <Button
           label="Submit"
           type="submit"
-          className="btn btn-success"
+          className="link-button-green contact-submit"
           handleClick={(event) => props.handleClick(event)}
         />
       </form>
