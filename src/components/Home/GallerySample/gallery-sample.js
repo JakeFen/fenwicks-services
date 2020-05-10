@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Swiper from "react-id-swiper";
+import GallerySample1 from "../../../images/GallerySample/gallerysample1.jpeg";
+import GallerySample2 from "../../../images/GallerySample/gallerysample2.jpeg";
+import GallerySample3 from "../../../images/GallerySample/gallerysample3.jpeg";
+import GallerySample4 from "../../../images/GallerySample/gallerysample4.jpeg";
+import GallerySample5 from "../../../images/GallerySample/gallerysample5.jpeg";
 
 function GallerySample() {
   const params = {
@@ -31,11 +36,11 @@ function GallerySample() {
           Gallery <span className="header-green">Sample</span>
         </h3>
         <Swiper {...params}>
-          <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <img src="https://via.placeholder.com/150x90/" alt="image1" />
-          <img src="https://via.placeholder.com/150x90/" alt="image1" />
+          <img src={GallerySample1} alt="image1" />
+          <img src={GallerySample2} alt="image2" />
+          <img src={GallerySample3} alt="image3" />
+          <img src={GallerySample4} alt="image4" />
+          <img src={GallerySample5} alt="image5" />
         </Swiper>
         <div className="gallery-button-container">
           <Link className="link-button-green" to="/gallery">
