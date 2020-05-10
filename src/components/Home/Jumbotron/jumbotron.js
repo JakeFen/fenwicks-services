@@ -67,7 +67,7 @@ function Jumbotron() {
           ></img>
           <div className="slide-content">
             <div className="slide-text container">
-              <h2>Keep your lawn and landscape looking it's best</h2>
+              <h2>We provide great service at an affordable price</h2>
               <div className="slide-button-container">
                 <Link className="link-button-green" to="/gallery">
                   GALLERY
@@ -89,7 +89,7 @@ function Jumbotron() {
           ></img>
           <div className="slide-content">
             <div className="slide-text container">
-              <h2>Keep your lawn and landscape looking it's best</h2>
+              <h2>Let us do the work so you don't have to</h2>
               <div className="slide-button-container">
                 <Link className="link-button-green" to="/services">
                   SERVICES

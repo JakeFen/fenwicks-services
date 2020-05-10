@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ContactForm from "./ContactForm/contact-form.js";
-import OurMission from "./OurMission/our-mission";
+import ContactForm from "../../ContactForm/contact-form";
+import OurMission from "../../OurMission/our-mission";
 
 class ContactBanner extends Component {
   state = {
@@ -32,7 +32,7 @@ class ContactBanner extends Component {
   render() {
     return (
       <div className="contact-banner-container container">
-        <OurMission />
+        <OurMission link={true} />
         <ContactForm
           selectField={this.state.selectField}
           onSubmit={this.onSubmit}

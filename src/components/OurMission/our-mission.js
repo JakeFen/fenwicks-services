@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function OurMission() {
+function OurMission({ link, ...props }) {
   return (
     <div className="mission-container">
-      <h3 className="mission-header">
+      <h3 className="header">
         Our <span className="header-green">Mission</span>
       </h3>
       <p className="paragraph">
@@ -16,9 +16,11 @@ function OurMission() {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum."
       </p>
-      <Link className="header-green" to="about-us">
-        Read More!
-      </Link>
+      {link && (
+        <Link className="header-green" to="about-us">
+          Read More!
+        </Link>
+      )}
     </div>
   );
 }

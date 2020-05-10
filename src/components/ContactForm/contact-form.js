@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "../../../Input/input";
-import SelectField from "../../../SelectField/selectField";
-import Button from "../../../Button/button";
+import Input from "../Input/input";
+import SelectField from "../SelectField/selectField";
+import Button from "../Button/button";
 
 function ContactForm(props) {
   return (
