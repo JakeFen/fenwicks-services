@@ -125,13 +125,13 @@ h4 {
 
 //////////////////////////
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     max-width: 750px;
   }
 }
 
-@media (min-width: 989px) {
+@media only screen and (min-width: 989px) {
   .container {
     max-width: 960px;
     padding-left: 0;
@@ -143,7 +143,7 @@ h4 {
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1150px;
   }

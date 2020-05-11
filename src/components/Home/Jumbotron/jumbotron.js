@@ -45,7 +45,7 @@ function Jumbotron() {
           </div>
           <div className="slide-content">
             <div className="slide-text container">
-              <h2>Keep your lawn and landscape looking it's best</h2>
+              <h2>Keep your lawn and landscape looking its best</h2>
               <div className="slide-button-container">
                 <Link className="link-button-green" to="/about-us">
                   ABOUT US

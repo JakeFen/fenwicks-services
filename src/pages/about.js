@@ -14,7 +14,7 @@ function About() {
           <AddedParagraph
             tclassName="header-green"
             pclassName="paragraph"
-            title="Keeping Our Community Looking It's Best"
+            title="Keeping Our Community Looking Its Best"
             paragraph="Fenwick's Services is devoted to creating a 
             beautiful community one house at a time! In 2020, for 
             every 20 hours we are hired to do work, we will be donating 

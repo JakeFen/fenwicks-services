@@ -22,7 +22,7 @@ function HomeBanner() {
           <img src={HouseCareImg} alt="House Care" />
           <h3>House Care</h3>
           <p className="paragraph">
-            Pressure washing your house is a great way to keep it looking it's
+            Pressure washing your house is a great way to keep it looking its
             best.
           </p>
           <Link className="header-green" to="/services">
