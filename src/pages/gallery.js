@@ -3,12 +3,12 @@ import PageHeader from "../components/PageHeader/page-header";
 import Image1 from "../images/Gallery/IMG_3055.jpeg";
 import Image2 from "../images/Gallery/IMG_2972.jpeg";
 import Image3 from "../images/Gallery/IMG_3164.jpeg";
-import Image4 from "../images/Gallery/IMG_2979.jpeg";
+import Image4 from "../images/Gallery/house-with-plants.jpeg";
 import Image5 from "../images/Gallery/IMG_2964.jpeg";
 import Image6 from "../images/Gallery/IMG_3112.jpeg";
-import Image7 from "../images/Gallery/IMG_1048.jpeg";
+import Image7 from "../images/Gallery/yellow-house.jpeg";
 import Image8 from "../images/Gallery/IMG_3078.jpeg";
-import Image9 from "../images/Gallery/IMG_1052.jpeg";
+import Image9 from "../images/Gallery/line-of-trees.jpeg";
 
 import GalleryImages from "../components/Gallery/GalleryImages/gallery-images";
 import ImageModal from "../components/Gallery/ImageModal/image-modal";
@@ -19,47 +19,47 @@ class Gallery extends Component {
       {
         key: 1,
         url: Image1,
-        alt: "Something",
+        alt: "Trimmed bushes and cut grass",
       },
       {
         key: 2,
         url: Image2,
-        alt: "Something",
+        alt: "Cut grass with tall trees",
       },
       {
         key: 3,
         url: Image3,
-        alt: "Something",
+        alt: "Playground with fresh mulch",
       },
       {
         key: 4,
         url: Image4,
-        alt: "Something",
+        alt: "House with plants surrounding it",
       },
       {
         key: 5,
         url: Image5,
-        alt: "Something",
+        alt: "big house with cut grass",
       },
       {
         key: 6,
         url: Image6,
-        alt: "Something",
+        alt: "Trimmed bushes with fresh mulch",
       },
       {
         key: 7,
         url: Image7,
-        alt: "Something",
+        alt: "Yellow house with cut grass",
       },
       {
         key: 8,
         url: Image8,
-        alt: "Something",
+        alt: "Trimmed bushes with fresh mulch",
       },
       {
         key: 9,
         url: Image9,
-        alt: "Something",
+        alt: "Line of trees with fresh mulch",
       },
     ],
     currentUrl: "",

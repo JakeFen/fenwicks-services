@@ -6,7 +6,10 @@ const OurTeam = ({ ...props }) => {
       <h3 className="header">
         Our <span className="header-green">Team</span>
       </h3>
-      <img src="https://via.placeholder.com/300x400" alt="alt" />
+      <img
+        src="https://via.placeholder.com/300x400"
+        alt="Isaac Fenwick in companies hoodie"
+      />
       <h5>Isaac Fenwick</h5>
       <p className="header-green teamates-role">Founder</p>
       <p className="paragraph">

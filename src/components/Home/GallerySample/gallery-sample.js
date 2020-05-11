@@ -36,11 +36,11 @@ function GallerySample() {
           Gallery <span className="header-green">Sample</span>
         </h3>
         <Swiper {...params}>
-          <img src={GallerySample1} alt="image1" />
-          <img src={GallerySample2} alt="image2" />
-          <img src={GallerySample3} alt="image3" />
-          <img src={GallerySample4} alt="image4" />
-          <img src={GallerySample5} alt="image5" />
+          <img src={GallerySample1} alt="House with cut grass" />
+          <img src={GallerySample2} alt="Flower garden" />
+          <img src={GallerySample3} alt="Clean pressure washed house" />
+          <img src={GallerySample4} alt="House with cut grass" />
+          <img src={GallerySample5} alt="Clean pressure washed driveway" />
         </Swiper>
         <div className="gallery-button-container">
           <Link className="link-button-green" to="/gallery">

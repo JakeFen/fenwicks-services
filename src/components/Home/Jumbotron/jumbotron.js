@@ -40,7 +40,7 @@ function Jumbotron() {
               srcSet={`${slideImage1480w} 480w, ${slideImage11080w} 1080w, ${slideImage11920w} 1920w`}
               sizes="100vw"
               className="jumbotron-image"
-              alt="img3"
+              alt="Big house with green grass"
             ></img>
           </div>
           <div className="slide-content">
@@ -63,7 +63,7 @@ function Jumbotron() {
             srcSet={`${slideImage2480w} 480w, ${slideImage21080w} 1080w, ${slideImage21920w} 1920w`}
             sizes="100vw"
             className="jumbotron-image"
-            alt="img3"
+            alt="Driveway leading to road"
           ></img>
           <div className="slide-content">
             <div className="slide-text container">
@@ -85,7 +85,7 @@ function Jumbotron() {
             srcSet={`${slideImage3480w} 480w, ${slideImage31080w} 1080w, ${slideImage31920w} 1920w`}
             sizes="100vw"
             className="jumbotron-image"
-            alt="img3"
+            alt="Big house with green grass"
           ></img>
           <div className="slide-content">
             <div className="slide-text container">

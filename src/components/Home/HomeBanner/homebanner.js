@@ -9,7 +9,7 @@ function HomeBanner() {
     <div className="home-banner-wrapper container">
       <ul className="banner-image-wrapper">
         <li className="banner-image">
-          <img src={LandscapingImg} alt="Landscaping" />
+          <img src={LandscapingImg} alt="House with green grass" />
           <h3>Landscaping</h3>
           <p className="paragraph">
             Keep your lawn looking its best with the care it deserves.
@@ -19,7 +19,7 @@ function HomeBanner() {
           </Link>
         </li>
         <li className="banner-image">
-          <img src={HouseCareImg} alt="House Care" />
+          <img src={HouseCareImg} alt="Clean house with trimmed bushes" />
           <h3>House Care</h3>
           <p className="paragraph">
             Pressure washing your house is a great way to keep it looking its
@@ -30,7 +30,7 @@ function HomeBanner() {
           </Link>
         </li>
         <li className="banner-image">
-          <img src={GardeningImg} alt="Gardening" />
+          <img src={GardeningImg} alt="House with plants surrounding it" />
           <h3>Gardening</h3>
           <p className="paragraph">
             Keep your plants looking their best all year-round.
