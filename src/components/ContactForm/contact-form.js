@@ -9,7 +9,7 @@ function ContactForm(props) {
       <h3 className="questions-header text-center">
         Have <span className="header-green">Questions?</span>
       </h3>
-      <form action="#">
+      <form action={props.action} method="post">
         <div className="contact-form-flex">
           <div className="contact-form-info">
             <Input
