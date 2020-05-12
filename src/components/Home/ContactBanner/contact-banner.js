@@ -4,6 +4,7 @@ import OurMission from "../../OurMission/our-mission";
 
 class ContactBanner extends Component {
   state = {
+    action: "../php/index.php",
     selectField: [
       {
         value: "landscaping",
@@ -34,8 +35,8 @@ class ContactBanner extends Component {
       <div className="contact-banner-container container">
         <OurMission link={true} />
         <ContactForm
+          action={this.state.action}
           selectField={this.state.selectField}
-          onSubmit={this.onSubmit}
         />
       </div>
     );

@@ -34,8 +34,8 @@ class Service extends Component {
             <AddedParagraph
               tclassName="header-green"
               pclassName="paragraph"
-              title="Keeping Our Community Looking It's Best"
-              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              title="Keeping Our Community Looking Its Best"
+              paragraph="Do you have overgrown bushes or weeds invading your garden? Do you wish your house was as clean as the day you bought it? By taking advantage of our wide selection of services, you can have your home looking pristine all year long!  From mowing to edging to power washing, we at Fenwick’s Services are dedicated to ensuring that you have a home you are proud to show off. Book an appointment with us today and soon your house will be the envy of the neighborhood!"
             />
             <div>
               <img src={ServiceImage} alt="alt"></img>

@@ -9,7 +9,7 @@ function ContactForm(props) {
       <h3 className="questions-header text-center">
         Have <span className="header-green">Questions?</span>
       </h3>
-      <form>
+      <form action={props.action} method="post">
         <div className="contact-form-flex">
           <div className="contact-form-info">
             <Input
@@ -28,6 +28,7 @@ function ContactForm(props) {
             />
             <SelectField
               services="home-contact-services"
+              name="home-subject"
               className="contact-input"
               options={props.selectField}
             />
@@ -36,16 +37,18 @@ function ContactForm(props) {
             <textarea
               row="10"
               className="contact-textfield"
+              name="home-message"
               placeholder="Message"
             ></textarea>
           </div>
         </div>
-        <Button
-          label="Submit"
+        {/* <Button
+          label="home-submit"
           type="submit"
           className="link-button-green contact-submit"
           handleClick={(event) => props.onSubmit(event)}
-        />
+        /> */}
+        <button type="submit" name="submit"></button>
       </form>
     </div>
   );
