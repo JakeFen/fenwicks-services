@@ -9,7 +9,7 @@ function ContactForm(props) {
       <h3 className="questions-header text-center">
         Have <span className="header-green">Questions?</span>
       </h3>
-      <form action={props.action} method="post">
+      <form action="#">
         <div className="contact-form-flex">
           <div className="contact-form-info">
             <Input
@@ -48,7 +48,7 @@ function ContactForm(props) {
           className="link-button-green contact-submit"
           handleClick={(event) => props.onSubmit(event)}
         /> */}
-        <button type="submit" name="submit"></button>
+        <button type="submit" name="submit" value="Submit"></button>
       </form>
     </div>
   );

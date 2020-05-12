@@ -4,7 +4,7 @@ import OurMission from "../../OurMission/our-mission";
 
 class ContactBanner extends Component {
   state = {
-    action: "../php/index.php",
+    action: "fenwicks-services/php/index.php",
     selectField: [
       {
         value: "landscaping",
