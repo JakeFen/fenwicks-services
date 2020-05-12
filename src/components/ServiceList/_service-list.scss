@@ -1,0 +1,38 @@
+.services {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 395px;
+  height: 230px;
+  li {
+    &:before {
+      color: $primary-color;
+      font-family: "Font Awesome\ 5 Free";
+      margin-right: 2px;
+      content: "\f058";
+    }
+    margin: 2px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    width: 750px;
+    height: 150px;
+    margin: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 989px) {
+  .services {
+    margin: 50px 170px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services {
+    margin: 50px 270px;
+  }
+}

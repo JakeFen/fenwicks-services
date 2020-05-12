@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceList = (props) => {
   return (
-    <ul className="services">
+    <ul className="services paragraph">
       {props.services.map((service) => (
         <li>{service}</li>
       ))}

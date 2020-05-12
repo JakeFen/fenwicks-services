@@ -1,0 +1,21 @@
+@import "../../components/ServiceList/service-list";
+
+.service-content {
+  margin: 50px auto;
+  img {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 989px) {
+  .service-paragraph-image {
+    display: flex;
+    justify-content: space-between;
+    div,
+    img {
+      margin: 0;
+      flex-basis: 48%;
+    }
+  }
+}
